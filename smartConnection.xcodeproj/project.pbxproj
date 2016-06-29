@@ -1,0 +1,830 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9513973C1C4C27A70015D60B /* TableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9513973B1C4C27A70015D60B /* TableController.swift */; };
+		956779AF1C218D2E0012C397 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956779AE1C218D2E0012C397 /* AppDelegate.swift */; };
+		956779B11C218D2E0012C397 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956779B01C218D2E0012C397 /* FirstViewController.swift */; };
+		956779B31C218D2E0012C397 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956779B21C218D2E0012C397 /* SecondViewController.swift */; };
+		956779B61C218D2E0012C397 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 956779B41C218D2E0012C397 /* Main.storyboard */; };
+		956779B81C218D2E0012C397 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 956779B71C218D2E0012C397 /* Assets.xcassets */; };
+		956779BB1C218D2E0012C397 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 956779B91C218D2E0012C397 /* LaunchScreen.storyboard */; };
+		956779C61C218D2F0012C397 /* smartConnectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956779C51C218D2F0012C397 /* smartConnectionTests.swift */; };
+		956779D11C218D2F0012C397 /* smartConnectionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956779D01C218D2F0012C397 /* smartConnectionUITests.swift */; };
+		956779E41C218F0E0012C397 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 956779E21C218F0E0012C397 /* Interface.storyboard */; };
+		956779E61C218F0E0012C397 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 956779E51C218F0E0012C397 /* Assets.xcassets */; };
+		956779ED1C218F0E0012C397 /* smartConnectionWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 956779EC1C218F0E0012C397 /* smartConnectionWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		956779F41C218F0E0012C397 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956779F31C218F0E0012C397 /* InterfaceController.swift */; };
+		956779F61C218F0E0012C397 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956779F51C218F0E0012C397 /* ExtensionDelegate.swift */; };
+		956779F81C218F0E0012C397 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956779F71C218F0E0012C397 /* NotificationController.swift */; };
+		956779FA1C218F0E0012C397 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956779F91C218F0E0012C397 /* GlanceController.swift */; };
+		956779FC1C218F0E0012C397 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 956779FB1C218F0E0012C397 /* Assets.xcassets */; };
+		95677A001C218F0E0012C397 /* smartConnectionWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 956779E01C218F0E0012C397 /* smartConnectionWatch.app */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		956779C21C218D2F0012C397 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 956779A31C218D2E0012C397 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 956779AA1C218D2E0012C397;
+			remoteInfo = smartConnection;
+		};
+		956779CD1C218D2F0012C397 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 956779A31C218D2E0012C397 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 956779AA1C218D2E0012C397;
+			remoteInfo = smartConnection;
+		};
+		956779EE1C218F0E0012C397 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 956779A31C218D2E0012C397 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 956779EB1C218F0E0012C397;
+			remoteInfo = "smartConnectionWatch Extension";
+		};
+		956779FE1C218F0E0012C397 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 956779A31C218D2E0012C397 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 956779DF1C218F0E0012C397;
+			remoteInfo = smartConnectionWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		95677A041C218F0E0012C397 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				956779ED1C218F0E0012C397 /* smartConnectionWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95677A081C218F0E0012C397 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				95677A001C218F0E0012C397 /* smartConnectionWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		951397391C4C22820015D60B /* smartConnection.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = smartConnection.entitlements; sourceTree = "<group>"; };
+		9513973A1C4C22CE0015D60B /* smartConnectionWatch Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "smartConnectionWatch Extension.entitlements"; sourceTree = "<group>"; };
+		9513973B1C4C27A70015D60B /* TableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableController.swift; sourceTree = "<group>"; };
+		956779AB1C218D2E0012C397 /* smartConnection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smartConnection.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		956779AE1C218D2E0012C397 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		956779B01C218D2E0012C397 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		956779B21C218D2E0012C397 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		956779B51C218D2E0012C397 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		956779B71C218D2E0012C397 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		956779BA1C218D2E0012C397 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		956779BC1C218D2E0012C397 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		956779C11C218D2F0012C397 /* smartConnectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = smartConnectionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		956779C51C218D2F0012C397 /* smartConnectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smartConnectionTests.swift; sourceTree = "<group>"; };
+		956779C71C218D2F0012C397 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		956779CC1C218D2F0012C397 /* smartConnectionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = smartConnectionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		956779D01C218D2F0012C397 /* smartConnectionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smartConnectionUITests.swift; sourceTree = "<group>"; };
+		956779D21C218D2F0012C397 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		956779E01C218F0E0012C397 /* smartConnectionWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smartConnectionWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		956779E31C218F0E0012C397 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		956779E51C218F0E0012C397 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		956779E71C218F0E0012C397 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		956779EC1C218F0E0012C397 /* smartConnectionWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "smartConnectionWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		956779F21C218F0E0012C397 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		956779F31C218F0E0012C397 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		956779F51C218F0E0012C397 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		956779F71C218F0E0012C397 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		956779F91C218F0E0012C397 /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		956779FB1C218F0E0012C397 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		956779FD1C218F0E0012C397 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		956779A81C218D2E0012C397 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		956779BE1C218D2F0012C397 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		956779C91C218D2F0012C397 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		956779E91C218F0E0012C397 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		956779A21C218D2E0012C397 = {
+			isa = PBXGroup;
+			children = (
+				956779AD1C218D2E0012C397 /* smartConnection */,
+				956779C41C218D2F0012C397 /* smartConnectionTests */,
+				956779CF1C218D2F0012C397 /* smartConnectionUITests */,
+				956779E11C218F0E0012C397 /* smartConnectionWatch */,
+				956779F01C218F0E0012C397 /* smartConnectionWatch Extension */,
+				956779AC1C218D2E0012C397 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		956779AC1C218D2E0012C397 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				956779AB1C218D2E0012C397 /* smartConnection.app */,
+				956779C11C218D2F0012C397 /* smartConnectionTests.xctest */,
+				956779CC1C218D2F0012C397 /* smartConnectionUITests.xctest */,
+				956779E01C218F0E0012C397 /* smartConnectionWatch.app */,
+				956779EC1C218F0E0012C397 /* smartConnectionWatch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		956779AD1C218D2E0012C397 /* smartConnection */ = {
+			isa = PBXGroup;
+			children = (
+				951397391C4C22820015D60B /* smartConnection.entitlements */,
+				956779AE1C218D2E0012C397 /* AppDelegate.swift */,
+				956779B01C218D2E0012C397 /* FirstViewController.swift */,
+				956779B21C218D2E0012C397 /* SecondViewController.swift */,
+				956779B41C218D2E0012C397 /* Main.storyboard */,
+				956779B71C218D2E0012C397 /* Assets.xcassets */,
+				956779B91C218D2E0012C397 /* LaunchScreen.storyboard */,
+				956779BC1C218D2E0012C397 /* Info.plist */,
+			);
+			path = smartConnection;
+			sourceTree = "<group>";
+		};
+		956779C41C218D2F0012C397 /* smartConnectionTests */ = {
+			isa = PBXGroup;
+			children = (
+				956779C51C218D2F0012C397 /* smartConnectionTests.swift */,
+				956779C71C218D2F0012C397 /* Info.plist */,
+			);
+			path = smartConnectionTests;
+			sourceTree = "<group>";
+		};
+		956779CF1C218D2F0012C397 /* smartConnectionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				956779D01C218D2F0012C397 /* smartConnectionUITests.swift */,
+				956779D21C218D2F0012C397 /* Info.plist */,
+			);
+			path = smartConnectionUITests;
+			sourceTree = "<group>";
+		};
+		956779E11C218F0E0012C397 /* smartConnectionWatch */ = {
+			isa = PBXGroup;
+			children = (
+				956779E21C218F0E0012C397 /* Interface.storyboard */,
+				956779E51C218F0E0012C397 /* Assets.xcassets */,
+				956779E71C218F0E0012C397 /* Info.plist */,
+			);
+			path = smartConnectionWatch;
+			sourceTree = "<group>";
+		};
+		956779F01C218F0E0012C397 /* smartConnectionWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9513973A1C4C22CE0015D60B /* smartConnectionWatch Extension.entitlements */,
+				9513973B1C4C27A70015D60B /* TableController.swift */,
+				956779F31C218F0E0012C397 /* InterfaceController.swift */,
+				956779F51C218F0E0012C397 /* ExtensionDelegate.swift */,
+				956779F71C218F0E0012C397 /* NotificationController.swift */,
+				956779F91C218F0E0012C397 /* GlanceController.swift */,
+				956779FB1C218F0E0012C397 /* Assets.xcassets */,
+				956779FD1C218F0E0012C397 /* Info.plist */,
+				956779F11C218F0E0012C397 /* Supporting Files */,
+			);
+			path = "smartConnectionWatch Extension";
+			sourceTree = "<group>";
+		};
+		956779F11C218F0E0012C397 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				956779F21C218F0E0012C397 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		956779AA1C218D2E0012C397 /* smartConnection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 956779D51C218D2F0012C397 /* Build configuration list for PBXNativeTarget "smartConnection" */;
+			buildPhases = (
+				956779A71C218D2E0012C397 /* Sources */,
+				956779A81C218D2E0012C397 /* Frameworks */,
+				956779A91C218D2E0012C397 /* Resources */,
+				95677A081C218F0E0012C397 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				956779FF1C218F0E0012C397 /* PBXTargetDependency */,
+			);
+			name = smartConnection;
+			productName = smartConnection;
+			productReference = 956779AB1C218D2E0012C397 /* smartConnection.app */;
+			productType = "com.apple.product-type.application";
+		};
+		956779C01C218D2F0012C397 /* smartConnectionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 956779D81C218D2F0012C397 /* Build configuration list for PBXNativeTarget "smartConnectionTests" */;
+			buildPhases = (
+				956779BD1C218D2F0012C397 /* Sources */,
+				956779BE1C218D2F0012C397 /* Frameworks */,
+				956779BF1C218D2F0012C397 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				956779C31C218D2F0012C397 /* PBXTargetDependency */,
+			);
+			name = smartConnectionTests;
+			productName = smartConnectionTests;
+			productReference = 956779C11C218D2F0012C397 /* smartConnectionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		956779CB1C218D2F0012C397 /* smartConnectionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 956779DB1C218D2F0012C397 /* Build configuration list for PBXNativeTarget "smartConnectionUITests" */;
+			buildPhases = (
+				956779C81C218D2F0012C397 /* Sources */,
+				956779C91C218D2F0012C397 /* Frameworks */,
+				956779CA1C218D2F0012C397 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				956779CE1C218D2F0012C397 /* PBXTargetDependency */,
+			);
+			name = smartConnectionUITests;
+			productName = smartConnectionUITests;
+			productReference = 956779CC1C218D2F0012C397 /* smartConnectionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		956779DF1C218F0E0012C397 /* smartConnectionWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95677A051C218F0E0012C397 /* Build configuration list for PBXNativeTarget "smartConnectionWatch" */;
+			buildPhases = (
+				956779DE1C218F0E0012C397 /* Resources */,
+				95677A041C218F0E0012C397 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				956779EF1C218F0E0012C397 /* PBXTargetDependency */,
+			);
+			name = smartConnectionWatch;
+			productName = smartConnectionWatch;
+			productReference = 956779E01C218F0E0012C397 /* smartConnectionWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		956779EB1C218F0E0012C397 /* smartConnectionWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95677A011C218F0E0012C397 /* Build configuration list for PBXNativeTarget "smartConnectionWatch Extension" */;
+			buildPhases = (
+				956779E81C218F0E0012C397 /* Sources */,
+				956779E91C218F0E0012C397 /* Frameworks */,
+				956779EA1C218F0E0012C397 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "smartConnectionWatch Extension";
+			productName = "smartConnectionWatch Extension";
+			productReference = 956779EC1C218F0E0012C397 /* smartConnectionWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		956779A31C218D2E0012C397 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Shailin Biharie";
+				TargetAttributes = {
+					956779AA1C218D2E0012C397 = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = N98F93EMH7;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					956779C01C218D2F0012C397 = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = N98F93EMH7;
+						TestTargetID = 956779AA1C218D2E0012C397;
+					};
+					956779CB1C218D2F0012C397 = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = N98F93EMH7;
+						TestTargetID = 956779AA1C218D2E0012C397;
+					};
+					956779DF1C218F0E0012C397 = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = N98F93EMH7;
+					};
+					956779EB1C218F0E0012C397 = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = N98F93EMH7;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 956779A61C218D2E0012C397 /* Build configuration list for PBXProject "smartConnection" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 956779A21C218D2E0012C397;
+			productRefGroup = 956779AC1C218D2E0012C397 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				956779AA1C218D2E0012C397 /* smartConnection */,
+				956779C01C218D2F0012C397 /* smartConnectionTests */,
+				956779CB1C218D2F0012C397 /* smartConnectionUITests */,
+				956779DF1C218F0E0012C397 /* smartConnectionWatch */,
+				956779EB1C218F0E0012C397 /* smartConnectionWatch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		956779A91C218D2E0012C397 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				956779BB1C218D2E0012C397 /* LaunchScreen.storyboard in Resources */,
+				956779B81C218D2E0012C397 /* Assets.xcassets in Resources */,
+				956779B61C218D2E0012C397 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		956779BF1C218D2F0012C397 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		956779CA1C218D2F0012C397 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		956779DE1C218F0E0012C397 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				956779E61C218F0E0012C397 /* Assets.xcassets in Resources */,
+				956779E41C218F0E0012C397 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		956779EA1C218F0E0012C397 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				956779FC1C218F0E0012C397 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		956779A71C218D2E0012C397 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				956779B31C218D2E0012C397 /* SecondViewController.swift in Sources */,
+				956779AF1C218D2E0012C397 /* AppDelegate.swift in Sources */,
+				956779B11C218D2E0012C397 /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		956779BD1C218D2F0012C397 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				956779C61C218D2F0012C397 /* smartConnectionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		956779C81C218D2F0012C397 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				956779D11C218D2F0012C397 /* smartConnectionUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		956779E81C218F0E0012C397 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				956779F81C218F0E0012C397 /* NotificationController.swift in Sources */,
+				956779F61C218F0E0012C397 /* ExtensionDelegate.swift in Sources */,
+				956779F41C218F0E0012C397 /* InterfaceController.swift in Sources */,
+				9513973C1C4C27A70015D60B /* TableController.swift in Sources */,
+				956779FA1C218F0E0012C397 /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		956779C31C218D2F0012C397 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 956779AA1C218D2E0012C397 /* smartConnection */;
+			targetProxy = 956779C21C218D2F0012C397 /* PBXContainerItemProxy */;
+		};
+		956779CE1C218D2F0012C397 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 956779AA1C218D2E0012C397 /* smartConnection */;
+			targetProxy = 956779CD1C218D2F0012C397 /* PBXContainerItemProxy */;
+		};
+		956779EF1C218F0E0012C397 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 956779EB1C218F0E0012C397 /* smartConnectionWatch Extension */;
+			targetProxy = 956779EE1C218F0E0012C397 /* PBXContainerItemProxy */;
+		};
+		956779FF1C218F0E0012C397 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 956779DF1C218F0E0012C397 /* smartConnectionWatch */;
+			targetProxy = 956779FE1C218F0E0012C397 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		956779B41C218D2E0012C397 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				956779B51C218D2E0012C397 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		956779B91C218D2E0012C397 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				956779BA1C218D2E0012C397 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		956779E21C218F0E0012C397 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				956779E31C218F0E0012C397 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		956779D31C218D2F0012C397 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		956779D41C218D2F0012C397 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		956779D61C218D2F0012C397 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = smartConnection/smartConnection.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = smartConnection/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.shailin.smartConnection;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		956779D71C218D2F0012C397 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = smartConnection/smartConnection.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = smartConnection/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.shailin.smartConnection;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		956779D91C218D2F0012C397 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = smartConnectionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.shailinbiharie.smartConnectionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/smartConnection.app/smartConnection";
+			};
+			name = Debug;
+		};
+		956779DA1C218D2F0012C397 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = smartConnectionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.shailinbiharie.smartConnectionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/smartConnection.app/smartConnection";
+			};
+			name = Release;
+		};
+		956779DC1C218D2F0012C397 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = smartConnectionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.shailinbiharie.smartConnectionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = smartConnection;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		956779DD1C218D2F0012C397 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = smartConnectionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.shailinbiharie.smartConnectionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = smartConnection;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+		95677A021C218F0E0012C397 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "smartConnectionWatch Extension/smartConnectionWatch Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "smartConnectionWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.shailin.smartConnection.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		95677A031C218F0E0012C397 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "smartConnectionWatch Extension/smartConnectionWatch Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "smartConnectionWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.shailin.smartConnection.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		95677A061C218F0E0012C397 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = smartConnectionWatch_Extension;
+				INFOPLIST_FILE = smartConnectionWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = nl.shailin.smartConnection.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		95677A071C218F0E0012C397 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = smartConnectionWatch_Extension;
+				INFOPLIST_FILE = smartConnectionWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = nl.shailin.smartConnection.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		956779A61C218D2E0012C397 /* Build configuration list for PBXProject "smartConnection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				956779D31C218D2F0012C397 /* Debug */,
+				956779D41C218D2F0012C397 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		956779D51C218D2F0012C397 /* Build configuration list for PBXNativeTarget "smartConnection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				956779D61C218D2F0012C397 /* Debug */,
+				956779D71C218D2F0012C397 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		956779D81C218D2F0012C397 /* Build configuration list for PBXNativeTarget "smartConnectionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				956779D91C218D2F0012C397 /* Debug */,
+				956779DA1C218D2F0012C397 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		956779DB1C218D2F0012C397 /* Build configuration list for PBXNativeTarget "smartConnectionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				956779DC1C218D2F0012C397 /* Debug */,
+				956779DD1C218D2F0012C397 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95677A011C218F0E0012C397 /* Build configuration list for PBXNativeTarget "smartConnectionWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95677A021C218F0E0012C397 /* Debug */,
+				95677A031C218F0E0012C397 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95677A051C218F0E0012C397 /* Build configuration list for PBXNativeTarget "smartConnectionWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95677A061C218F0E0012C397 /* Debug */,
+				95677A071C218F0E0012C397 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 956779A31C218D2E0012C397 /* Project object */;
+}
